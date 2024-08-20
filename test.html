@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Up SIP Calculator</title>
+</head>
+
+<body>
+    <div>
+        <label for="monthly-investment">Monthly Investment (₹): </label>
+        <input type="number" id="monthly-investment" value="5000">
+    </div>
+    <div>
+        <label for="expected-returns">Expected Annual Return (%): </label>
+        <input type="number" id="expected-returns" value="12">
+    </div>
+    <div>
+        <label for="investment-period">Investment Period (Years): </label>
+        <input type="number" id="investment-period" value="10">
+    </div>
+    <div>
+        <label for="top-up-amount">Annual Top-Up Amount (₹): </label>
+        <input type="number" id="top-up-amount" value="1000">
+    </div>
+    <button onclick="calculateTopUpSIP()">Calculate</button>
+
+    <h3>Results:</h3>
+    <p>Invested Amount: ₹<span id="invested-amount">0</span></p>
+    <p>Estimated Returns: ₹<span id="estimated-returns">0</span></p>
+    <p>Total Value: ₹<span id="total-value">0</span></p>
+
+    <script>
+        function calculateTopUpSIP() {
+            const monthlyInvestment = parseFloat(document.getElementById("monthly-investment").value);
+            const annualReturnRate = parseFloat(document.getElementById("expected-returns").value) / 100;
+            const investmentPeriod = parseInt(document.getElementById("investment-period").value);
+            const topUpAmount = parseFloat(document.getElementById("top-up-amount").value);
+
+            let totalInvestedAmount = 0;
+            let futureValue = 0;
+
+            for (let year = 1; year <= investmentPeriod; year++) {
+                const currentYearInvestment = monthlyInvestment + (topUpAmount * (year - 1));
+                totalInvestedAmount += currentYearInvestment * 12;
+
+                for (let month = 1; month <= 12; month++) {
+                    const monthsRemaining = (investmentPeriod - year) * 12 + (12 - month + 1);
+                    futureValue += currentYearInvestment * Math.pow(1 + annualReturnRate / 12, monthsRemaining);
+                }
+            }
+
+            const estimatedReturns = futureValue - totalInvestedAmount;
+
+            document.getElementById("invested-amount").innerText = numberWithCommas(totalInvestedAmount.toFixed(2));
+            document.getElementById("estimated-returns").innerText = numberWithCommas(estimatedReturns.toFixed(2));
+            document.getElementById("total-value").innerText = numberWithCommas(futureValue.toFixed(2));
+        }
+
+        function numberWithCommas(value) {
+            return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+    </script>
+</body>
+
+</html>
