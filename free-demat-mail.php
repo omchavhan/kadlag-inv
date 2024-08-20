@@ -2,7 +2,7 @@
 
 // Only process POST requests.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the form fields and remove whitespace.
+    // Get and sanitize form fields.
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $dob = trim($_POST["birth-date"]);
@@ -15,12 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nominee_pan = strip_tags(trim($_POST["Nominee-pan-no"]));
     
     // File uploads
-    $pan_card = $_FILES['pan_card'];
-    $aadhar_card = $_FILES['aadhar_card'];
-    $bank_cheque = $_FILES['bank_cheque'];
+    $files = [
+        'pan_card' => $_FILES['pan_card'],
+        'aadhar_card' => $_FILES['aadhar_card'],
+        'bank_cheque' => $_FILES['bank_cheque']
+    ];
 
     // Check that data was sent to the mailer.
-    if ( empty($name) OR empty($dob) OR empty($birth_place) OR empty($occupation) OR empty($mobile) OR empty($email) OR empty($nominee_name) OR empty($nominee_dob) OR empty($nominee_pan)  OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) || empty($dob) || empty($birth_place) || empty($occupation) || empty($mobile) || empty($email) || empty($nominee_name) || empty($nominee_dob) || empty($nominee_pan) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
         echo "Please complete the form and try again.";
         exit;
@@ -28,17 +30,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // File upload handling
     $upload_dir = 'uploads/'; // Set your upload directory
-    $allowed_types = array('jpg', 'jpeg', 'png', 'pdf'); // Allowed file types
+    $allowed_types = ['jpg', 'jpeg', 'png', 'pdf']; // Allowed file types
     $max_size = 2 * 1024 * 1024; // 2MB max file size
 
     $file_paths = [];
     $file_errors = [];
 
-    // Validate and upload each file
-    foreach (['pan_card', 'aadhar_card', 'bank_cheque'] as $file_field) {
-        $file = $_FILES[$file_field];
+    foreach ($files as $file_field => $file) {
         $file_name = basename($file['name']);
         $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+        $file_path = $upload_dir . uniqid() . '.' . $file_ext;
 
         if ($file['error'] !== UPLOAD_ERR_OK) {
             $file_errors[] = "Error uploading $file_name.";
@@ -55,7 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             continue;
         }
 
-        $file_path = $upload_dir . uniqid() . '.' . $file_ext;
         if (move_uploaded_file($file['tmp_name'], $file_path)) {
             $file_paths[$file_field] = $file_path;
         } else {
@@ -86,6 +86,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Nominee Name: $nominee_name\n";
     $email_content .= "Nominee Date of Birth: $nominee_dob\n";
     $email_content .= "Nominee PAN Card Number: $nominee_pan\n\n";
+    
+    // Append file paths if needed
+    foreach ($file_paths as $field => $path) {
+        $email_content .= ucfirst(str_replace('_', ' ', $field)) . ": $path\n";
+    }
 
     // Build the email headers.
     $email_headers = "From: $name <$email>";
@@ -98,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         http_response_code(500);
         echo "Oops! Something went wrong and we couldn't send your message.";
-        header("Location: oops.html");
+        // header("Location: oops.html");
     }
 
 } else {
