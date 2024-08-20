@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SIP Calculation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com/"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico" />
-    <!--build:css assets/css/styles.min.css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/slick.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-drawer.min.css" />
-    <link rel="stylesheet" href="assets/icons/style.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/animate-4.1.1.min.css" />
-    <link rel="stylesheet" href="sip.css">
-    <!--endbuild-->
-  </head>
-  <body>
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/659537820ff6374032bb97a4/1hj7e1mcj';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <div id="header">
-      <!-- <div class="top-nav style-one bg-dark" style="background-color: #cb483d;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SIP Calculation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico" />
+  <!--build:css assets/css/styles.min.css-->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/slick.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-drawer.min.css" />
+  <link rel="stylesheet" href="assets/icons/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animate-4.1.1.min.css" />
+  <link rel="stylesheet" href="sip.css">
+  <link rel="stylesheet" href="top-up-cal.css">
+  <!--endbuild-->
+</head>
+
+<body>
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/659537820ff6374032bb97a4/1hj7e1mcj';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+
+  <!-- Top-Up Cal -->
+
+
+  <div id="header">
+    <!-- <div class="top-nav style-one bg-dark" style="background-color: #cb483d;">
         <div class="container flex-between h-44">
           <div class="left-block flex-item-center">
             <div class="location flex-item-center"><i class="ph-light ph-map-pin text-white fs-20"></i><span class="ml-8 caption1 text-white">S-5, Second Floor, Top Ten Imperial, Sangamner</span></div>
@@ -57,49 +57,51 @@
           </div>
         </div>
       </div> -->
-      <div class="style-subpage style-about-one">
-        <div class="header-menu style-one bg-white">
-          <div class="container flex-between h-80"><a class="menu-left-block" href="home.html"><img class="menu-logo display-block" src="assets/images/Logo.png" alt="logo"/></a>
-            <div class="menu-center-block h-100">
-              <ul class="menu-nav flex-item-center h-100">
-                <li class="nav-item h-100 flex-center home"><a class="nav-link" href="home.html">Home </a>
-                  <ul class="sub-nav hidden" style="display: none;">
-                    <li class="sub-nav-item active"><a class="sub-nav-link" href="index.html">Payment Solution</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="home2.html">Financial Planning</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="home3.html">Online Banking</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="home4.html">Personal Finance</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="home5.html">Cryptocurrency Financial</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="home6.html">Blockchain</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item h-100 flex-center about"><a class="nav-link" href="about.html">About Us</a>
-                  <ul class="sub-nav hidden" style="display: none;">
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="about-one.html">About Style 1</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="about-two.html">About Style 2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item h-100 flex-center services"><a class="nav-link" href="services.html">Services</a>
-                  <ul class="sub-nav hidden" style="display: none;">
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="service-one.html">Service Style 1</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="service-two.html">Service Style 2</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="service-detail.html">Services Detail</a></li>
-                  </ul>
-                </li>
-                <!-- <li class="nav-item h-100 flex-center case"><a class="nav-link" href="#!">Case Studies <i class="ph ph-caret-down fs-14"></i></a>
+    <div class="style-subpage style-about-one">
+      <div class="header-menu style-one bg-white">
+        <div class="container flex-between h-80"><a class="menu-left-block" href="index.html"><img
+              class="menu-logo display-block" src="assets/images/Logo.png" alt="logo" /></a>
+          <div class="menu-center-block h-100">
+            <ul class="menu-nav flex-item-center h-100">
+              <li class="nav-item h-100 flex-center home"><a class="nav-link" href="index.html">Home </a>
+                <ul class="sub-nav hidden" style="display: none;">
+                  <li class="sub-nav-item active"><a class="sub-nav-link" href="index.html">Payment Solution</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="home2.html">Financial Planning</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="home3.html">Online Banking</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="home4.html">Personal Finance</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="home5.html">Cryptocurrency Financial</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="home6.html">Blockchain</a></li>
+                </ul>
+              </li>
+              <li class="nav-item h-100 flex-center about"><a class="nav-link" href="about.html">About Us</a>
+                <ul class="sub-nav hidden" style="display: none;">
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="about-one.html">About Style 1</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="about-two.html">About Style 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item h-100 flex-center services"><a class="nav-link" href="services.html">Services</a>
+                <ul class="sub-nav hidden" style="display: none;">
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="service-one.html">Service Style 1</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="service-two.html">Service Style 2</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="service-detail.html">Services Detail</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item h-100 flex-center case"><a class="nav-link" href="#!">Case Studies <i class="ph ph-caret-down fs-14"></i></a>
                   <ul class="sub-nav hidden">
                     <li class="sub-nav-item"> <a class="sub-nav-link" href="case-studies-one.html">Case Studies 1</a></li>
                     <li class="sub-nav-item"> <a class="sub-nav-link" href="case-studies-two.html">Case Studies 2</a></li>
                     <li class="sub-nav-item"> <a class="sub-nav-link" href="case-studies-detail.html">Case Studies Detail</a></li>
                   </ul>
                 </li> -->
-                <li class="nav-item h-100 flex-center pages"><a class="nav-link" href="sip-calculator.html">SIP Calculator</a>
-                  <ul class="sub-nav hidden" style="display: none;">
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="faqs.html">FAQs</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="partners.html">Partners</a></li>
-                  </ul>
-                </li>
-                <!-- <li class="nav-item h-100 flex-center blog"><a class="nav-link" href="#!">Blog </a>
+              <li class="nav-item h-100 flex-center pages"><a class="nav-link" href="sip-calculator.html">SIP
+                  Calculator</a>
+                <ul class="sub-nav hidden" style="display: none;">
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="faqs.html">FAQs</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="pricing.html">Pricing</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="partners.html">Partners</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item h-100 flex-center blog"><a class="nav-link" href="#!">Blog </a>
                   <ul class="sub-nav hidden" style="display: none;">
                     <li class="sub-nav-item"> <a class="sub-nav-link" href="blog-list-one.html">Blog List 1</a></li>
                     <li class="sub-nav-item"> <a class="sub-nav-link" href="blog-list-two.html">Blog List 2</a></li>
@@ -109,72 +111,92 @@
                     <li class="sub-nav-item"> <a class="sub-nav-link" href="blog-detail-two.html">Blog Detail 2</a></li>
                   </ul>
                 </li> -->
-                <li class="nav-item h-100 flex-center contact"><a class="nav-link" href="contact.html">Contact </a>
-                  <ul class="sub-nav hidden" style="display: none;">
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-one.html">Contact Style 1</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-two.html">Contact Style 2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item h-100 flex-center contact"><a class="nav-link" href="https://forms.gle/sKFDV9WPgQeJwP5q9">Free Demat Account</a>
-                  <ul class="sub-nav hidden" style="display: none;">
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-one.html">Contact Style 1</a></li>
-                    <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-two.html">Contact Style 2</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="menu-right-block flex-item-center">
-              <div class="icon-call"><i class="icon-phone-call fs-36"></i></div>
-              <div class="text ml-12">
-                <div class="text caption1">&nbsp;&nbsp;Free Consultancy&nbsp;-&nbsp;24/7</div>
-                <div class="number text-button"><a href="tel:+919150306306-+919422840886" target="_blank" rel="noopener noreferrer">+91- 9150306306  , +91- 9422840886 </a></div>
-                <!-- <div class="number text-button">+91- 9422840886</div> -->
-              </div>
-              <div class="menu-humburger display-none pointer"><i class="ph-bold ph-list display-block"></i></div>
-            </div>
+              <li class="nav-item h-100 flex-center contact"><a class="nav-link" href="contact.html">Contact </a>
+                <ul class="sub-nav hidden" style="display: none;">
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-one.html">Contact Style 1</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-two.html">Contact Style 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item h-100 flex-center contact"><a class="nav-link"
+                  href="https://forms.gle/sKFDV9WPgQeJwP5q9">Free Demat Account</a>
+                <ul class="sub-nav hidden" style="display: none;">
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-one.html">Contact Style 1</a></li>
+                  <li class="sub-nav-item"> <a class="sub-nav-link" href="contact-two.html">Contact Style 2</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div id="menu-mobile-block"> 
-            <div class="menu-mobile-main"> 
-              <div class="container"> 
-                <ul class="menu-nav-mobile h-100 pt-4 pb-4">
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-8 pb-8 pl-12 pr-12 pointer home"><a class="fs-14 nav-link-mobile" href="home.html">Home </a>
-                    <ul class="sub-nav-mobile" style="display: none;">
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8 active"><a class="sub-nav-link fs-14" href="index.html">Payment Solution</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="home2.html">Financial Planning</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="home3.html">Online Banking</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="home4.html">Personal Finance</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="home5.html">Cryptocurrency Financial</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="home6.html">Blockchain</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer about"><a class="fs-14 nav-link-mobile" href="about.html">About Us</a>
-                    <ul class="sub-nav-mobile" style="display: none;">
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="about-one.html">About Style 1</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="about-two.html">About Style 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer services"><a class="fs-14 nav-link-mobile" href="services.html">Services </a>
-                    <ul class="sub-nav-mobile" style="display: none;">
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="service-one.html">Service Style 1</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="service-two.html">Service Style 2</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="service-detail.html">Services Detail</a></li>
-                    </ul>
-                  </li>
-                  <!-- <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer case"><a class="fs-14 nav-link-mobile" href="#!">Case Studies </a>
+          <div class="menu-right-block flex-item-center">
+            <div class="icon-call"><i class="icon-phone-call fs-36"></i></div>
+            <div class="text ml-12">
+              <div class="text caption1">&nbsp;&nbsp;Free Consultancy&nbsp;-&nbsp;24/7</div>
+              <div class="number text-button"><a href="tel:+919150306306-+919422840886" target="_blank"
+                  rel="noopener noreferrer">+91- 9150306306 , +91- 9422840886 </a></div>
+              <!-- <div class="number text-button">+91- 9422840886</div> -->
+            </div>
+            <div class="menu-humburger display-none pointer"><i class="ph-bold ph-list display-block"></i></div>
+          </div>
+        </div>
+        <div id="menu-mobile-block">
+          <div class="menu-mobile-main">
+            <div class="container">
+              <ul class="menu-nav-mobile h-100 pt-4 pb-4">
+                <li class="nav-item-mobile h-100 flex-column gap-8 pt-8 pb-8 pl-12 pr-12 pointer home"><a
+                    class="fs-14 nav-link-mobile" href="index.html">Home </a>
+                  <ul class="sub-nav-mobile" style="display: none;">
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8 active"><a class="sub-nav-link fs-14"
+                        href="index.html">Payment Solution</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="home2.html">Financial Planning</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="home3.html">Online Banking</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="home4.html">Personal Finance</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="home5.html">Cryptocurrency Financial</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="home6.html">Blockchain</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer about"><a
+                    class="fs-14 nav-link-mobile" href="about.html">About Us</a>
+                  <ul class="sub-nav-mobile" style="display: none;">
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14"
+                        href="about-one.html">About Style 1</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="about-two.html">About Style 2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer services"><a
+                    class="fs-14 nav-link-mobile" href="services.html">Services </a>
+                  <ul class="sub-nav-mobile" style="display: none;">
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14"
+                        href="service-one.html">Service Style 1</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="service-two.html">Service Style 2</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="service-detail.html">Services Detail</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer case"><a class="fs-14 nav-link-mobile" href="#!">Case Studies </a>
                     <ul class="sub-nav-mobile" style="display: none;">
                       <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="case-studies-one.html">Case Studies 1</a></li>
                       <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="case-studies-two.html">Case Studies 2</a></li>
                       <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="case-studies-detail.html">Case Studies Detail</a></li>
                     </ul>
                   </li> -->
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer pages"><a class="fs-14 nav-link-mobile" href="sip-calculator.html">SIP Calculation</i></a>
-                    <ul class="sub-nav-mobile"style="display: none;">
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="faqs.html">FAQs</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="pricing.html">Pricing</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="partners.html">Partners</a></li>
-                    </ul>
-                  </li>
-                  <!-- <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer blog"><a class="fs-14 nav-link-mobile" href="#!">Blog </a>
+                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer pages"><a
+                    class="fs-14 nav-link-mobile" href="sip-calculator.html">SIP Calculation</i></a>
+                  <ul class="sub-nav-mobile" style="display: none;">
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14"
+                        href="faqs.html">FAQs</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="pricing.html">Pricing</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="partners.html">Partners</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer blog"><a class="fs-14 nav-link-mobile" href="#!">Blog </a>
                     <ul class="sub-nav-mobile" style="display: none;">
                       <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="blog-list-one.html">Blog List 1</a></li>
                       <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="blog-list-two.html">Blog List 2</a></li>
@@ -184,709 +206,701 @@
                       <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="blog-detail-two.html">Blog Detail 2</a></li>
                     </ul>
                   </li> -->
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact"><a class="fs-14 nav-link-mobile" href="contact.html">Contact</a>
-                    <ul class="sub-nav-mobile" style="display: none;">
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="contact-one.html">Contact Style 1</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="contact-two.html">Contact Style 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact"><a class="fs-14 nav-link-mobile" href="https://forms.gle/sKFDV9WPgQeJwP5q9">Free Demat Account</a>
-                    <ul class="sub-nav-mobile" style="display: none;">
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14" href="contact-one.html">Contact Style 1</a></li>
-                      <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14" href="contact-two.html">Contact Style 2</a></li>
-                    </ul>
-                  </li>
-                </ul>
+                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact"><a
+                    class="fs-14 nav-link-mobile" href="contact.html">Contact</a>
+                  <ul class="sub-nav-mobile" style="display: none;">
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14"
+                        href="contact-one.html">Contact Style 1</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="contact-two.html">Contact Style 2</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item-mobile h-100 flex-column gap-8 pt-4 pb-8 pl-12 pr-12 pointer contact"><a
+                    class="fs-14 nav-link-mobile" href="https://forms.gle/sKFDV9WPgQeJwP5q9">Free Demat Account</a>
+                  <ul class="sub-nav-mobile" style="display: none;">
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"><a class="sub-nav-link fs-14"
+                        href="contact-one.html">Contact Style 1</a></li>
+                    <li class="sub-nav-item pl-12 pr-12 pt-8 pb-8"> <a class="sub-nav-link fs-14"
+                        href="contact-two.html">Contact Style 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header End   -->
+
+  <!-- SIP Banner -->
+
+  <div class="slider-sub ">
+    <div class="bg-img"> <img src="assets/images/banner/sip.jpg" alt="banner" /></div>
+    <div class="container">
+      <div class="heading-nav gap-4 mt-32"><a class="hover-underline caption1 text-white" href="index.html">Home</a><i
+          class="ph ph-caret-double-right text-white"></i>
+        <div class="caption1 text-white">SIP Calculation</div>
+      </div>
+      <div class="text-nav">
+        <div class="heading3 text-white">SIP Calculation</div>
+        <!-- <div class="sub-heading mt-8 text-white fw-400">We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy.</div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Calculation Start   -->
+
+
+
+
+  <div class="sip-calculation  mt-80">
+    <div class="list-nav flex-center gap-8 flex-wrap" style="margin-bottom: 40px;">
+      <button class="btn b1" id="one" style="font-size: larger;"> Home Loan Calculator </button>
+      <button class="btn b2" id="two" style="font-size: larger;"> SIP Calculator</button>
+      <button class="btn b3" id="three" style="font-size: larger;"> Car Loan Calculator </button>
+      <button class="btn b4" id="four" style="font-size: larger;"> Top Up Calculator </button>
+
+    </div>
+
+    <div class="flex-center ml-28">
+
+      <!-- Home Loan  -->
+
+      <div class="info " id="h1">
+        <h1 class="text-center mb-5 mt-32 blue-col" style="font-size: x-large;">Home is where heart is <br
+            class="br"><br class="br"> - plan it today! </h1>
+
+        <div class="circle  d-flex  justify-content-around">
+
+
+          <div class="slider-input">
+
+
+            <div class="d-flex justify-content-between">
+              <div>Loan amount</div>
+
+              <div class="d-flex justify-content-end">
+                <span id="tool11" class="pr-12 symbol" data-tooltip="minimum value allowed is 100000"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <span class="b-colr rup" id="span11">₹</span>
+                <input type="number" class="display-value" oninput="handleInput(event)" id="loan-home-input"
+                  min="100000" max="10000000" value="1000000">
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="100000" max="10000000" value="1000000" class="slider" id="loan-home-slider"
+                step="50000" />
+
+            </div><br><br>
+
+
+
+            <div class="d-flex justify-content-between">
+              <div>Rate of interest (p.a)</div>
+
+              <div class="d-flex justify-content-end">
+                <span id="tool12" class="pr-12 symbol"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <input type="number" class="display-value" id="rate-home-input" min="1" max="30" value="6.5"><span
+                  class="b-colr" id="span12">%</span>
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="1" max="30" value="6.5" class="slider" id="rate-home-slider" step="0.1" />
+            </div><br><br>
+
+
+            <div class="d-flex justify-content-between">
+              <div>Loan tenure</div>
+
+              <div class="d-flex justify-content-end">
+                <span id="tool13" class="pr-12 symbol" data-tooltip="minimum value allowed is 1"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <input type="number" class="display-value" id="tenure-home-input" class="display-value"
+                  oninput="handleInput(event)" min="1" max="30" value="5"><span class="b-colr" id="span13">Yr</span>
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="1" max="30" value="5" class="slider" id="tenure-home-slider" />
+            </div>
+
+
+
+
+
+            <div class="mt-100">
+              <div class="d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Monthly EMI</span>
+                <span id="emi-value">₹19,566</span>
+              </div>
+
+              <div class="mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Principal amount</span>
+                <span id="principal-amount-value">₹10,00,000</span>
+              </div>
+
+              <div class="mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Total interest</span>
+                <span id="interest-value">₹1,73,969</span>
+              </div>
+
+              <div class="mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Total amount</span>
+                <span id="total-home-value">₹11,73,969</span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class=" cir-ring  d-flex flex-column align-items-center">
+
+
+            <div class="">
+
+              <div class="I1"></div>
+              <span class="Indicate" style="color: #bdbdbd;">Principal Amount</span>
+
+              <div class="I2"></div>
+              <span class="Indicate" style="color: #bdbdbd;">Interest amount</span>
+
+            </div>
+
+            <div class="circle-bar mt-32">
+
+              <div class="home-circle">
+
+                <div class="home-inside-circle">
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+      <!--  SIP -->
+
+      <div class="info" id="h2">
+
+        <h1 class="text-center mt-32 blue-col" style="font-size: x-large;"> Systematic Investment <br class="br"><br
+            class="br"> Plan is the way to go! </h1>
+
+
+
+
+        <div class="circle  d-flex justify-content-around">
+
+          <div class="slider-input">
+
+
+
+            <div class="d-flex justify-content-between">
+              <div>Monthly investment</div>
+
+              <div class=" d-flex justify-content-end">
+                <span id="tool1" class="pr-12 symbol" data-tooltip="minimum value allowed is 500"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <span class="b-colr rup" id="span1">₹</span>
+                <input type="number" class="display-value" oninput="handleInput(event)" id="monthly-investment-input"
+                  min="500" max="1000000" value="25000">
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="500" max="1000000" value="25000" class="slider" id="monthly-investment-slider"
+                step="500" />
+
+            </div><br><br>
+
+            <div class="d-flex justify-content-between">
+              <div class="">Expected return rate (p.a)</div>
+
+              <div class=" d-flex justify-content-end">
+                <span id="tool2" class="pr-12 symbol" data-tooltip="minimum value allowed is 1"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <input type="number" class="display-value" id="expected-returns-input" min="1" max="30" value="12"><span
+                  id="span2" class="b-colr">%</span>
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="1" max="30" value="12" class="slider" id="expected-returns-slider" step="0.1" />
+            </div> <br><br>
+
+            <div class="d-flex justify-content-between">
+              <div>Time period</div>
+
+              <div class=" d-flex justify-content-end">
+                <span id="tool3" class="pr-12 symbol" data-tooltip="minimum value allowed is 1"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <input type="number" class="display-value" id="time-period-input" oninput="handleInput(event)" min="1"
+                  max="40" value="10"><span id="span3" class=" b-colr">Yr</span>
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="1" max="40" value="10" class="slider" id="time-period-slider" />
+            </div>
+
+
+
+            <div class="mt-100 ">
+              <div class="d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Invested amount</span>
+                <span id="invested-amount">₹30,00,000</span>
+              </div>
+
+              <div class=" mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Est. returns</span>
+                <span id="return-amount">₹28,08,477</span>
+              </div>
+
+              <div class=" mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Total value</span>
+                <span id="total-value">₹58,08,477</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="cir-ring  d-flex flex-column align-items-center">
+            <div class="">
+
+              <div class="I1"></div>
+              <span class="Indicate" style="color: #bdbdbd;">Invested amount</span>
+
+              <div class="I2 ml-28" style="color: #bdbdbd;"></div>
+              <span class="Indicate">Est. returns</span>
+
+            </div>
+
+            <div class="mt-32 sip-circle">
+              <div class="cb-circle">
+                <div class="wrapper">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <!-- Car Loan -->
+
+      <div class="info" id="h3">
+        <h1 class="text-center mb-5 mt-32 blue-col d-flex flex-column" style="font-size: x-large;"> Home is where heart
+          is <br class="br"><br class="br"> - plan it today! </h1>
+
+        <div class="circle  d-flex  justify-content-around">
+
+
+          <div class="slider-input">
+
+
+            <div class="d-flex justify-content-between">
+              <div>Loan amount</div>
+
+              <div class="d-flex justify-content-end">
+                <span id="tool21" class="pr-12 symbol" data-tooltip="minimum value allowed is 100000"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <span class="b-colr rup" id="span21">₹</span>
+                <input type="number" class="display-value" oninput="handleInput(event)" id="loan-car-input" min="100000"
+                  max="10000000" value="1000000">
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="100000" max="10000000" value="1000000" class="slider" id="loan-car-slider"
+                step="50000" />
+
+            </div><br><br>
+
+
+
+            <div class="d-flex justify-content-between">
+              <div>Rate of interest (p.a)</div>
+
+              <div class="d-flex justify-content-end">
+                <span id="tool22" class="pr-12 symbol" data-tooltip="minimum value allowed is 1"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <input type="number" class="display-value" id="rate-car-input" min="1" max="30" value="6.5"><span
+                  class="b-colr" id="span22">%</span>
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="1" max="30" value="6.5" class="slider" id="rate-car-slider" step="0.1" />
+            </div><br><br>
+
+
+            <div class="d-flex justify-content-between">
+              <div>Loan tenure</div>
+
+              <div class="d-flex justify-content-end">
+                <span id="tool23" class="pr-12 symbol" data-tooltip="minimum value allowed is 1"><svg
+                    xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                    <path fill="#eb5b3c"
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                  </svg></span>
+                <input type="number" class="display-value" id="tenure-car-input" class="display-value"
+                  oninput="handleInput(event)" min="1" max="30" value="5"><span class="b-colr" id="span23">Yr</span>
+              </div>
+            </div><br>
+            <div class="sliderbar">
+              <input type="range" min="1" max="30" value="5" class="slider" id="tenure-car-slider" />
+            </div>
+
+
+
+
+
+            <div class="mt-100 ">
+              <div class="d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Monthly EMI</span>
+                <span id="emi-car-value">₹19,566</span>
+              </div>
+
+              <div class="mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Principal amount</span>
+                <span id="principal-amount-car-value">₹10,00,000</span>
+              </div>
+
+              <div class="mt-8 d-flex justify-content-between val-space">
+                <span style="color: #bdbdbd;">Total interest</span>
+                <span id="interest-car-value">₹1,73,969</span>
+              </div>
+
+              <div class="mt-8 d-flex justify-content-between  val-space">
+                <span style="color: #bdbdbd;">Total amount</span>
+                <span id="total-car-value">₹11,73,969</span>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class=" cir-ring  d-flex flex-column align-items-center">
+
+
+            <div class="">
+
+              <div class="I1"></div>
+              <span class="Indicate">Principal Amount</span>
+
+              <div class="I2"></div>
+              <span class="Indicate">Interest amount</span>
+
+            </div>
+
+            <div class="circle-bar mt-32">
+
+              <div class="car-circle">
+
+                <div class="car-inside-circle">
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <!--  Top UP -->
+
+      <div class="info" id="h4">
+        <div class="custom-container">
+          <h2>Top Up SIP Calculator</h2>
+          <div class="custom-input-container">
+            <label for="sip-amount">I would like to save (₹)</label>
+            <input type="number" id="sip-amount" value="10000" oninput="updateAmountDisplay()">
+            <span class="custom-amount-display" id="amount-display">₹10,000</span>
+          </div>
+
+          <label>Frequency</label>
+          <div class="custom-toggle-buttons">
+            <button id="monthly" class="active" onclick="setFrequency('monthly')">Monthly</button>
+            <button id="quarterly" onclick="setFrequency('quarterly')">Quarterly</button>
+          </div>
+
+          <label>Annual Increment in SIP amount</label>
+          <div class="custom-toggle-buttons">
+            <button id="percentage" class="active" onclick="setIncrementType('percentage')">Percentage</button>
+            <button id="amount" onclick="setIncrementType('amount')">Amount</button>
+          </div>
+
+          <input type="range" id="increment-percentage" min="0.5" max="15" step="0.1" value="6"
+            oninput="updatePercentageLabel(); updateSliderBackground('increment-percentage')">
+          <div class="custom-range-label">
+            <span id="percentage-min">0.5%</span>
+            <span id="percentage-max">15%</span>
+          </div>
+
+          <input type="range" id="increment-amount" min="100" max="5000" step="100" value="1000" style="display:none;"
+            oninput="updateAmountLabel(); updateSliderBackground('increment-amount')">
+          <div class="custom-range-label" id="amount-range-label" style="display:none;">
+            <span id="amount-min">₹100</span>
+            <span id="amount-max">₹5000</span>
+          </div>
+
+          <label>Expected rate of return (%)</label>
+          <input type="range" id="rate-of-return" min="2" max="13" step="0.1" value="10.5"
+            oninput="updateRateOfReturnLabel(); updateSliderBackground('rate-of-return')">
+          <div class="custom-range-label">
+            <span id="rate-min">2%</span>
+            <span id="rate-max">13%</span>
+          </div>
+
+          <label>Period of Investment (Years)</label>
+          <input type="range" id="investment-period" min="1" max="30" step="1" value="22"
+            oninput="updatePeriodLabel(); updateSliderBackground('investment-period')">
+          <div class="custom-range-label">
+            <span id="period-min">1 Year</span>
+            <span id="period-max">30 Years</span>
+          </div>
+
+          <button class="custom-submit-btn custome" onclick="calculateSIP()">Submit</button>
+
+          <div class="custom-result" id="result">
+            <div id="total-investment">Total Investment: ₹0.00</div>
+            <div id="sip-value">SIP Value: ₹0.00</div>
+          </div>
+        </div>
+
+        <style>
+          .custome {
+            background-color: #004aad;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+          }
+        </style>
+
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class=" mt-100 slider-logo">
+    <div class="">
+      <div class="heading3 text-center">We are Associated with</div>
+    </div>
+    <div class=" mt-80" style="margin-top: 0px;">
+      <div class="">
+        <div class=" mt-32 row-gap-32">
+          <div class="">
+            <div class="partner-five-col style-one mt-100 bg-blue" style="background-color: #ffff;">
+              <div class="list pt-32 pb-32">
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo.png" alt="" /></div>
+
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-2.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-3.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-4.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-5.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo.png" alt="" /></div>
+
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-2.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-3.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-4.png" alt="" />
+                </div>
+                <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-5.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <a class="scroll-to-top-btn" href="#header"><i class="ph-bold ph-caret-up"></i></a>
+  <!-- <div class="pb-200"></div> -->
 
-    <!-- Header End   -->
+  <!-- Footer start   -->
 
-    <!-- SIP Banner -->
 
-    <div class="slider-sub ">
-      <div class="bg-img"> <img src="assets/images/banner/sip.jpg" alt="banner"/></div>
-      <div class="container"> 
-        <div class="heading-nav gap-4 mt-32"><a class="hover-underline caption1 text-white" href="home.html">Home</a><i class="ph ph-caret-double-right text-white"></i>
-          <div class="caption1 text-white">SIP Calculation</div>
-        </div>
-        <div class="text-nav"> 
-          <div class="heading3 text-white">SIP Calculation</div>
-          <!-- <div class="sub-heading mt-8 text-white fw-400">We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy.</div> -->
-        </div>
-      </div>
-    </div>
- 
-
-    <!-- Calculation Start   -->
-
-   
-    
-
-    <div class="sip-calculation  mt-80" >
-      <div class="list-nav flex-center gap-8 flex-wrap" style="margin-bottom: 40px;">
-        <button class="btn b1" id="one" style="font-size: larger;">  Home Loan Calculator </button>   
-        <button class="btn b2" id="two" style="font-size: larger;"> SIP Calculator</button>   
-        <button class="btn b3" id="three"  style="font-size: larger;"> Car Loan Calculator </button>   
-        <button class="btn b4" id="four"  style="font-size: larger;"> Top Up Calculator </button>  
-
-      </div>
-
-      <div class="flex-center ml-28">
-
-        <!-- Home Loan  -->
-
-        <div class="info " id="h1">
-          <h1 class="text-center mb-5 mt-32 blue-col" style="font-size: x-large;">Home is where heart is <br class="br"><br class="br"> - plan it today! </h1>
-
-          <div class="circle  d-flex  justify-content-around" >
-
-             
-            <div class="slider-input">
-
-             
-            <div class="d-flex justify-content-between">
-              <div>Loan amount</div>
-
-            <div class="d-flex justify-content-end">
-             <span id="tool11" class="pr-12 symbol" data-tooltip="minimum value allowed is 100000" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-             <span class="b-colr rup" id="span11">₹</span>
-             <input type="number" class="display-value" oninput="handleInput(event)" id="loan-home-input" min="100000" max="10000000" 
-              value="1000000" ></div>
-            </div><br>
-            <div class="sliderbar">
-              <input
-                type="range"
-                min="100000"
-                max="10000000"
-                value="1000000"
-                class="slider"
-                id="loan-home-slider"
-                step="50000"
-              />
-            
-            </div><br><br>
-
-
-            
-            <div class="d-flex justify-content-between">
-              <div>Rate of interest (p.a)</div> 
-         
-              <div class="d-flex justify-content-end">
-              <span id="tool12" class="pr-12 symbol"  ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span>
-              <input type="number" class="display-value" id="rate-home-input"   min="1" max="30" value="6.5" ><span class="b-colr" id="span12">%</span></div>
-            </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="1"
-                  max="30"
-                  value="6.5"
-                  class="slider"
-                  id="rate-home-slider"
-                  step="0.1"
-                />
-              </div><br><br>
-
-
-            <div class="d-flex justify-content-between">
-              <div>Loan tenure</div>
-
-              <div class="d-flex justify-content-end">
-              <span id="tool13" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-              <input type="number" class="display-value"  id="tenure-home-input" class="display-value" oninput="handleInput(event)"  min="1" max="30" value="5" ><span class="b-colr" id="span13">Yr</span></div>
-            </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="1"
-                  max="30"
-                  value="5"
-                  class="slider"
-                  id="tenure-home-slider"
-                />
-              </div>
-
-
-              
-
-
-                <div class="mt-100" >
-                  <div class="d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Monthly EMI</span>
-                    <span id="emi-value">₹19,566</span>
-                  </div>
-          
-                  <div class="mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Principal amount</span>
-                    <span id="principal-amount-value">₹10,00,000</span>
-                  </div>
-          
-                  <div class="mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Total interest</span>
-                    <span  id="interest-value">₹1,73,969</span>
-                  </div>
-    
-                  <div class="mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Total amount</span>
-                    <span id="total-home-value">₹11,73,969</span>
-                  </div>
-                </div>
-          
-              
-            </div> 
-
-             <div class=" cir-ring  d-flex flex-column align-items-center">
- 
-
-                <div class="">
-
-                  <div class="I1"></div>
-                  <span class="Indicate" style="color: #bdbdbd;">Principal Amount</span>
-
-                   <div class="I2"></div>
-                   <span class="Indicate" style="color: #bdbdbd;">Interest amount</span>
-
-              </div>
-
-              <div class="circle-bar mt-32">
-
-                 <div class="home-circle">
-
-                   <div class="home-inside-circle">
-                       
-                  </div>   
-
-                </div>
-              
-              </div>
-               
-             </div>
-
-
-           </div>
-
-           
-         
-
-
-        </div>
-
-        <!--  SIP -->
-
-         <div class="info" id="h2">
-
-          <h1 class="text-center mt-32 blue-col" style="font-size: x-large;">  Systematic Investment  <br class="br"><br class="br"> Plan  is the way to go! </h1> 
-          
-          
-          
- 
-           <div class="circle  d-flex justify-content-around">
-
-            <div class="slider-input" >
-
-             
-
-            <div class="d-flex justify-content-between" >
-              <div>Monthly investment</div>
-                 
-              <div class=" d-flex justify-content-end">
-              <span id="tool1" class="pr-12 symbol" data-tooltip="minimum value allowed is 500" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span>
-               <span class="b-colr rup" id="span1">₹</span>
-              <input type="number" class="display-value"  oninput="handleInput(event)"  id="monthly-investment-input" min="500" max="1000000" value="25000" ></div>
-            </div><br>
-            <div class="sliderbar">
-              <input
-                type="range"
-                min="500"
-                max="1000000"
-                value="25000"
-                class="slider"
-                id="monthly-investment-slider"
-                step="500"
-              />
-            
-            </div><br><br>
-            
-            <div class="d-flex justify-content-between">
-              <div class="">Expected return rate (p.a)</div>
-
-              <div class=" d-flex justify-content-end" >
-              <span id="tool2" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-               <input   type="number" class="display-value" id="expected-returns-input" min="1" max="30" value="12"><span id="span2" class="b-colr">%</span></div>
-            </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="1"
-                  max="30"
-                  value="12"
-                  class="slider"
-                  id="expected-returns-slider"
-                  step="0.1"
-                />
-              </div> <br><br>
-
-            <div class="d-flex justify-content-between">
-              <div>Time period</div>
-
-              <div class=" d-flex justify-content-end" >
-              <span id="tool3" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-               <input type="number" class="display-value" id="time-period-input" oninput="handleInput(event)"  min="1" max="40" value="10" ><span id="span3" class=" b-colr">Yr</span>
-              </div> 
-            </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="1"
-                  max="40"
-                  value="10"
-                  class="slider"
-                  id="time-period-slider"
-                />
-              </div>
-
-              
-
-              <div class="mt-100 ">
-                <div class="d-flex justify-content-between val-space">
-                  <span style="color: #bdbdbd;">Invested amount</span>
-                  <span id="invested-amount">₹30,00,000</span>
-                </div>
-        
-                <div class=" mt-8 d-flex justify-content-between val-space">
-                  <span style="color: #bdbdbd;">Est. returns</span>
-                  <span id="return-amount">₹28,08,477</span>
-                </div>
-        
-                <div class=" mt-8 d-flex justify-content-between val-space">
-                  <span style="color: #bdbdbd;">Total value</span>
-                  <span id="total-value">₹58,08,477</span>
-                </div>
-              </div>
-
-            </div> 
-
-             <div class="cir-ring  d-flex flex-column align-items-center">
-              <div class="">
- 
-                <div class="I1"></div>
-                <span class="Indicate" style="color: #bdbdbd;">Invested amount</span>
-
-                <div class="I2 ml-28" style="color: #bdbdbd;"></div>
-                <span class="Indicate">Est. returns</span>
-
-              </div> 
-
-              <div class="mt-32 sip-circle">
-                <div class="cb-circle">
-                  <div class="wrapper">
-
-                  </div>
-                </div>
-              
-              </div>
-            </div>
-
-
-           </div>
-
-         
-
-
-         </div>
-
-         <!-- Car Loan -->
-     
-         <div class="info" id="h3">
-          <h1 class="text-center mb-5 mt-32 blue-col d-flex flex-column" style="font-size: x-large;">  Home is where heart is <br class="br"><br class="br"> -  plan it today! </h1>
-
-          <div class="circle  d-flex  justify-content-around" >
-
-             
-            <div class="slider-input">
-
-             
-            <div class="d-flex justify-content-between">
-              <div>Loan amount</div>
-
-            <div class="d-flex justify-content-end">
-             <span id="tool21" class="pr-12 symbol" data-tooltip="minimum value allowed is 100000" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-             <span class="b-colr rup" id="span21">₹</span>
-             <input type="number" class="display-value" oninput="handleInput(event)" id="loan-car-input" min="100000" max="10000000" 
-              value="1000000" ></div>
-            </div><br>
-            <div class="sliderbar">
-              <input
-                type="range"
-                min="100000"
-                max="10000000"
-                value="1000000"
-                class="slider"
-                id="loan-car-slider"
-                step="50000"
-              />
-            
-            </div><br><br>
-
-
-            
-            <div class="d-flex justify-content-between">
-              <div>Rate of interest (p.a)</div> 
-         
-              <div class="d-flex justify-content-end">
-              <span id="tool22" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span>
-              <input type="number" class="display-value" id="rate-car-input"   min="1" max="30" value="6.5" ><span class="b-colr" id="span22">%</span></div>
-            </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="1"
-                  max="30"
-                  value="6.5"
-                  class="slider"
-                  id="rate-car-slider"
-                  step="0.1"
-                />
-              </div><br><br>
-
-
-            <div class="d-flex justify-content-between">
-              <div>Loan tenure</div>
-
-              <div class="d-flex justify-content-end">
-              <span id="tool23" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-              <input type="number" class="display-value"  id="tenure-car-input" class="display-value" oninput="handleInput(event)"  min="1" max="30" value="5" ><span class="b-colr" id="span23">Yr</span></div>
-            </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="1"
-                  max="30"
-                  value="5"
-                  class="slider"
-                  id="tenure-car-slider"
-                />
-              </div>
-
-
-              
-
-
-                <div class="mt-100 " >
-                  <div class="d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Monthly EMI</span>
-                    <span id="emi-car-value">₹19,566</span>
-                  </div>
-          
-                  <div class="mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Principal amount</span>
-                    <span id="principal-amount-car-value">₹10,00,000</span>
-                  </div>
-          
-                  <div class="mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Total interest</span>
-                    <span  id="interest-car-value">₹1,73,969</span>
-                  </div>
-    
-                  <div class="mt-8 d-flex justify-content-between  val-space">
-                    <span style="color: #bdbdbd;">Total amount</span>
-                    <span id="total-car-value">₹11,73,969</span>
-                  </div>
-                </div>
-          
-              
-            </div> 
-
-             <div class=" cir-ring  d-flex flex-column align-items-center">
- 
-
-                <div class="">
-
-                  <div class="I1"></div>
-                  <span class="Indicate">Principal Amount</span>
-
-                   <div class="I2"></div>
-                   <span class="Indicate">Interest amount</span>
-
-              </div>
-
-              <div class="circle-bar mt-32">
-
-                 <div class="car-circle">
-
-                   <div class="car-inside-circle">
-                       
-                  </div>   
-
-                </div>
-              
-              </div>
-               
-             </div>
-
-
-           </div>        
-         </div>         
-         
-          <!--  Top UP -->
-
-          <div class="info" id="h4">
-
-            <h1 class="text-center mt-32 blue-col" style="font-size: x-large;">  Systematic Investment  <br class="br"><br class="br"> Plan  is the way to go! </h1> 
-            
-            
-            
-   
-             <div class="circle  d-flex justify-content-around">
-  
-              <div class="slider-input" >
-  
-               
-  
-              <div class="d-flex justify-content-between" >
-                <div>Monthly investment</div>
-                   
-                <div class=" d-flex justify-content-end">
-                <span id="tool1" class="pr-12 symbol" data-tooltip="minimum value allowed is 500" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span>
-                 <span class="b-colr rup" id="span1">₹</span>
-                <input type="number" class="display-value"  oninput="handleInput(event)"  id="monthly-investment-input" min="500" max="1000000" value="25000" ></div>
-              </div><br>
-              <div class="sliderbar">
-                <input
-                  type="range"
-                  min="500"
-                  max="1000000"
-                  value="25000"
-                  class="slider"
-                  id="monthly-investment-slider"
-                  step="500"
-                />
-              
-              </div><br><br>
-              
-              <div class="d-flex justify-content-between">
-                <div class="">Expected return rate (p.a)</div>
-  
-                <div class=" d-flex justify-content-end" >
-                <span id="tool2" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-                 <input   type="number" class="display-value" id="expected-returns-input" min="1" max="30" value="12"><span id="span2" class="b-colr">%</span></div>
-              </div><br>
-                <div class="sliderbar">
-                  <input
-                    type="range"
-                    min="1"
-                    max="30"
-                    value="12"
-                    class="slider"
-                    id="expected-returns-slider"
-                    step="0.1"
-                  />
-                </div> <br><br>
-  
-              <div class="d-flex justify-content-between">
-                <div>Time period</div>
-  
-                <div class=" d-flex justify-content-end" >
-                <span id="tool3" class="pr-12 symbol" data-tooltip="minimum value allowed is 1" ><svg  xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#eb5b3c" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span> 
-                 <input type="number" class="display-value" id="time-period-input" oninput="handleInput(event)"  min="1" max="40" value="10" ><span id="span3" class=" b-colr">Yr</span>
-                </div> 
-              </div><br>
-                <div class="sliderbar">
-                  <input
-                    type="range"
-                    min="1"
-                    max="40"
-                    value="10"
-                    class="slider"
-                    id="time-period-slider"
-                  />
-                </div>
-  
-                
-  
-                <div class="mt-100 ">
-                  <div class="d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Invested amount</span>
-                    <span id="invested-amount">₹30,00,000</span>
-                  </div>
-          
-                  <div class=" mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Est. returns</span>
-                    <span id="return-amount">₹28,08,477</span>
-                  </div>
-          
-                  <div class=" mt-8 d-flex justify-content-between val-space">
-                    <span style="color: #bdbdbd;">Total value</span>
-                    <span id="total-value">₹58,08,477</span>
-                  </div>
-                </div>
-  
-              </div> 
-  
-               <div class="cir-ring  d-flex flex-column align-items-center">
-                <div class="">
-   
-                  <div class="I1"></div>
-                  <span class="Indicate" style="color: #bdbdbd;">Invested amount</span>
-  
-                  <div class="I2 ml-28" style="color: #bdbdbd;"></div>
-                  <span class="Indicate">Est. returns</span>
-  
-                </div> 
-  
-                <div class="mt-32 sip-circle">
-                  <div class="cb-circle">
-                    <div class="wrapper">
-  
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-  
-  
-             </div>
-  
-           
-  
-  
-           </div>
-      </div>
-
-    </div>
-
-    <div class=" mt-100 slider-logo" >
-      <div class="">
-         <div class="heading3 text-center">We are Associated with</div>
-      </div>
-      <div class=" mt-80" style="margin-top: 0px;">
-         <div class="">
-            <div class=" mt-32 row-gap-32">
-               <div class="">
-                  <div class="partner-five-col style-one mt-100 bg-blue" style="background-color: #ffff;">
-                     <div class="list pt-32 pb-32">
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo.png" alt=""/></div>
-                        
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-2.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-3.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-4.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-5.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo.png" alt=""/></div>
-                       
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-2.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-3.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-4.png" alt=""/></div>
-                        <div class="bg-img flex-center"><img class="w-100" src="assets/images/partner/Logo-5.png" alt=""/></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-    <a class="scroll-to-top-btn" href="#header"
-      ><i class="ph-bold ph-caret-up"></i
-    ></a>
-    <!-- <div class="pb-200"></div> -->
-
-    <!-- Footer start   -->
-
-    
-    <div id="footer" >
-      <!-- <div class="cta-block style-two">
+  <div id="footer">
+    <!-- <div class="cta-block style-two">
         <div class="bg-cta w-100"><img class="w-100 h-100" src="assets/images/cta/bg-cta1.png" alt=""/></div>
         <div class="container flex-between h-100">
           <div class="heading5 text-white">Looking for a first-class business consultant?</div><a class="button-share hover-button-black bg-white text-button pl-36 pr-36 pt-12 pb-12 bora-48" href="contact-two.html">Get A Quote</a>
         </div>
       </div> -->
-      <div class="style-one">
-        <div class="footer-block bg-dark pt-60">
-          <div class="container">
-            <div class="row flex-between pb-40">
-              <div class="col-3">
-                <div class="footer-company-infor flex-columns-between gap-20"><img class="footer-logo" src="assets/images/Logo-footer.png" alt="Logo"/>
-                  <div class="text caption1 text-white"><p class="text-style">Stay in the loop with the latest financial insights and updates. Follow us on social media for valuable tips, industry news, and exclusive content. Your financial journey is our priority, and we're here to keep you informed every step of the way.</p></div>
-                  <div class="list-social flex-item-center gap-10 style-one"><a class="item bora-50 w-28 h-28 border-grey-2px flex-center" href="https://www.facebook.com/KadlagInvestmentFB/" target="_blank"><i class="icon-facebook fs-12"></i></a></a><a class="item bora-50 w-28 h-28 border-grey-2px flex-center" href="https://www.twitter.com/" target="_blank"><i class="icon-twitter fs-10"></i></a><a class="item bora-50 w-28 h-28 border-grey-2px flex-center" href="https://www.instagram.com/kadlaginvestment/" target="_blank"><i class="icon-insta fs-10"></i></a><a class="item bora-50 w-28 h-28 border-grey-2px flex-center" href="https://www.youtube.com/@sunilkadlag2723" target="_blank"><i class="icon-youtube fs-10"></i></a></div>
+    <div class="style-one">
+      <div class="footer-block bg-dark pt-60">
+        <div class="container">
+          <div class="row flex-between pb-40">
+            <div class="col-3">
+              <div class="footer-company-infor flex-columns-between gap-20"><img class="footer-logo"
+                  src="assets/images/Logo-footer.png" alt="Logo" />
+                <div class="text caption1 text-white">
+                  <p class="text-style">Stay in the loop with the latest financial insights and updates. Follow us on
+                    social media for valuable tips, industry news, and exclusive content. Your financial journey is our
+                    priority, and we're here to keep you informed every step of the way.</p>
+                </div>
+                <div class="list-social flex-item-center gap-10 style-one"><a
+                    class="item bora-50 w-28 h-28 border-grey-2px flex-center"
+                    href="https://www.facebook.com/KadlagInvestmentFB/" target="_blank"><i
+                      class="icon-facebook fs-12"></i></a></a><a
+                    class="item bora-50 w-28 h-28 border-grey-2px flex-center" href="https://www.twitter.com/"
+                    target="_blank"><i class="icon-twitter fs-10"></i></a><a
+                    class="item bora-50 w-28 h-28 border-grey-2px flex-center"
+                    href="https://www.instagram.com/kadlaginvestment/" target="_blank"><i
+                      class="icon-insta fs-10"></i></a><a class="item bora-50 w-28 h-28 border-grey-2px flex-center"
+                    href="https://www.youtube.com/@sunilkadlag2723" target="_blank"><i
+                      class="icon-youtube fs-10"></i></a></div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="footer-navigate d-flex justify-content-end gap-80">
+                <div class="footer-nav-item">
+                  <div class="item-heading text-button-small text-white">Quick Links</div>
+                  <ul class="list-nav mt-4">
+                    <li class="mt-12"><a class="caption1 text-line hover-underline" href="index.html">Home</a></li>
+                    <li class="mt-12"><a class="caption1 text-line hover-underline" href="about.html">About us</a></li>
+                    <li class="mt-12"><a class="caption1 text-line hover-underline" href="services.html">Services</a>
+                    </li>
+                    <!-- <li class="mt-12"><a class="caption1 text-line hover-underline" href="#">Blog</a></li> -->
+                    <li class="mt-12"><a class="caption1 text-line hover-underline" href="sip-calculator.html">SIP
+                        Calculation</a></li>
+                    <li class="mt-12"><a class="caption1 text-line hover-underline" href="contact.html">Contact</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="footer-navigate d-flex justify-content-end gap-80">
-                  <div class="footer-nav-item">
-                    <div class="item-heading text-button-small text-white">Quick Links</div>
-                    <ul class="list-nav mt-4">
-                      <li class="mt-12"><a class="caption1 text-line hover-underline" href="home.html">Home</a></li>
-                      <li class="mt-12"><a class="caption1 text-line hover-underline" href="about.html">About us</a></li>
-                      <li class="mt-12"><a class="caption1 text-line hover-underline" href="services.html">Services</a></li>
-                      <!-- <li class="mt-12"><a class="caption1 text-line hover-underline" href="#">Blog</a></li> -->
-                      <li class="mt-12"><a class="caption1 text-line hover-underline" href="sip-calculator.html">SIP Calculation</a></li>
-                      <li class="mt-12"><a class="caption1 text-line hover-underline" href="contact.html">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="company-contact"> 
-                  <!-- <div class="heading text-button-small text-white">Newsletter</div> -->
-                  <div class="mt-12 flex-item-center"> 
-                    <svg width="36" height="36" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M26.43 16.1254C25.785 16.1254 25.275 15.6004 25.275 14.9704C25.275 14.4154 24.72 13.2604 23.79 12.2554C22.875 11.2804 21.87 10.7104 21.03 10.7104C20.385 10.7104 19.875 10.1854 19.875 9.55539C19.875 8.92539 20.4 8.40039 21.03 8.40039C22.53 8.40039 24.105 9.21039 25.485 10.6654C26.775 12.0304 27.6 13.7254 27.6 14.9554C27.6 15.6004 27.075 16.1254 26.43 16.1254Z" fill="#C1D8FF"></path>
-                      <path d="M31.8446 16.125C31.1996 16.125 30.6896 15.6 30.6896 14.97C30.6896 9.645 26.3546 5.325 21.0446 5.325C20.3996 5.325 19.8896 4.8 19.8896 4.17C19.8896 3.54 20.3996 3 21.0296 3C27.6296 3 32.9996 8.37 32.9996 14.97C32.9996 15.6 32.4746 16.125 31.8446 16.125Z" fill="#C1D8FF"></path>
-                      <path d="M17.685 21.315L12.78 26.22C12.24 25.74 11.715 25.245 11.205 24.735C9.66 23.175 8.265 21.54 7.02 19.83C5.79 18.12 4.8 16.41 4.08 14.715C3.36 13.005 3 11.37 3 9.81C3 8.79 3.18 7.815 3.54 6.915C3.9 6 4.47 5.16 5.265 4.41C6.225 3.465 7.275 3 8.385 3C8.805 3 9.225 3.09 9.6 3.27C9.99 3.45 10.335 3.72 10.605 4.11L14.085 9.015C14.355 9.39 14.55 9.735 14.685 10.065C14.82 10.38 14.895 10.695 14.895 10.98C14.895 11.34 14.79 11.7 14.58 12.045C14.385 12.39 14.1 12.75 13.74 13.11L12.6 14.295C12.435 14.46 12.36 14.655 12.36 14.895C12.36 15.015 12.375 15.12 12.405 15.24C12.45 15.36 12.495 15.45 12.525 15.54C12.795 16.035 13.26 16.68 13.92 17.46C14.595 18.24 15.315 19.035 16.095 19.83C16.635 20.355 17.16 20.865 17.685 21.315Z" fill="#C1D8FF"></path>
-                      <path d="M32.9554 27.4955C32.9554 27.9155 32.8804 28.3505 32.7304 28.7705C32.6854 28.8905 32.6404 29.0105 32.5804 29.1305C32.3254 29.6705 31.9954 30.1805 31.5604 30.6605C30.8254 31.4705 30.0154 32.0555 29.1004 32.4305C29.0854 32.4305 29.0704 32.4455 29.0554 32.4455C28.1704 32.8055 27.2104 33.0005 26.1754 33.0005C24.6454 33.0005 23.0104 32.6405 21.2854 31.9055C19.5604 31.1705 17.8354 30.1805 16.1254 28.9355C15.5404 28.5005 14.9554 28.0655 14.4004 27.6005L19.3054 22.6955C19.7254 23.0105 20.1004 23.2505 20.4154 23.4155C20.4904 23.4455 20.5804 23.4905 20.6854 23.5355C20.8054 23.5805 20.9254 23.5955 21.0604 23.5955C21.3154 23.5955 21.5104 23.5055 21.6754 23.3405L22.8154 22.2155C23.1904 21.8405 23.5504 21.5555 23.8954 21.3755C24.2404 21.1655 24.5854 21.0605 24.9604 21.0605C25.2454 21.0605 25.5454 21.1205 25.8754 21.2555C26.2054 21.3905 26.5504 21.5855 26.9254 21.8405L31.8904 25.3655C32.2804 25.6355 32.5504 25.9505 32.7154 26.3255C32.8654 26.7005 32.9554 27.0755 32.9554 27.4955Z" fill="#C1D8FF"></path>
-                    </svg>
-                    <div class="text ml-16">
-                      <div class="caption2 text-line">Need help? 24/7 </div>
-                      <div class="fw-700 text-white mt-4"><a href="tel:+919150306306" target="_blank" rel="noopener noreferrer" style="color:white ;">+91- 9150306306</a></div>
-                    </div>
-                  </div>
+            </div>
+            <div class="col-3">
+              <div class="company-contact">
+                <!-- <div class="heading text-button-small text-white">Newsletter</div> -->
+                <div class="mt-12 flex-item-center">
+                  <svg width="36" height="36" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M26.43 16.1254C25.785 16.1254 25.275 15.6004 25.275 14.9704C25.275 14.4154 24.72 13.2604 23.79 12.2554C22.875 11.2804 21.87 10.7104 21.03 10.7104C20.385 10.7104 19.875 10.1854 19.875 9.55539C19.875 8.92539 20.4 8.40039 21.03 8.40039C22.53 8.40039 24.105 9.21039 25.485 10.6654C26.775 12.0304 27.6 13.7254 27.6 14.9554C27.6 15.6004 27.075 16.1254 26.43 16.1254Z"
+                      fill="#C1D8FF"></path>
+                    <path
+                      d="M31.8446 16.125C31.1996 16.125 30.6896 15.6 30.6896 14.97C30.6896 9.645 26.3546 5.325 21.0446 5.325C20.3996 5.325 19.8896 4.8 19.8896 4.17C19.8896 3.54 20.3996 3 21.0296 3C27.6296 3 32.9996 8.37 32.9996 14.97C32.9996 15.6 32.4746 16.125 31.8446 16.125Z"
+                      fill="#C1D8FF"></path>
+                    <path
+                      d="M17.685 21.315L12.78 26.22C12.24 25.74 11.715 25.245 11.205 24.735C9.66 23.175 8.265 21.54 7.02 19.83C5.79 18.12 4.8 16.41 4.08 14.715C3.36 13.005 3 11.37 3 9.81C3 8.79 3.18 7.815 3.54 6.915C3.9 6 4.47 5.16 5.265 4.41C6.225 3.465 7.275 3 8.385 3C8.805 3 9.225 3.09 9.6 3.27C9.99 3.45 10.335 3.72 10.605 4.11L14.085 9.015C14.355 9.39 14.55 9.735 14.685 10.065C14.82 10.38 14.895 10.695 14.895 10.98C14.895 11.34 14.79 11.7 14.58 12.045C14.385 12.39 14.1 12.75 13.74 13.11L12.6 14.295C12.435 14.46 12.36 14.655 12.36 14.895C12.36 15.015 12.375 15.12 12.405 15.24C12.45 15.36 12.495 15.45 12.525 15.54C12.795 16.035 13.26 16.68 13.92 17.46C14.595 18.24 15.315 19.035 16.095 19.83C16.635 20.355 17.16 20.865 17.685 21.315Z"
+                      fill="#C1D8FF"></path>
+                    <path
+                      d="M32.9554 27.4955C32.9554 27.9155 32.8804 28.3505 32.7304 28.7705C32.6854 28.8905 32.6404 29.0105 32.5804 29.1305C32.3254 29.6705 31.9954 30.1805 31.5604 30.6605C30.8254 31.4705 30.0154 32.0555 29.1004 32.4305C29.0854 32.4305 29.0704 32.4455 29.0554 32.4455C28.1704 32.8055 27.2104 33.0005 26.1754 33.0005C24.6454 33.0005 23.0104 32.6405 21.2854 31.9055C19.5604 31.1705 17.8354 30.1805 16.1254 28.9355C15.5404 28.5005 14.9554 28.0655 14.4004 27.6005L19.3054 22.6955C19.7254 23.0105 20.1004 23.2505 20.4154 23.4155C20.4904 23.4455 20.5804 23.4905 20.6854 23.5355C20.8054 23.5805 20.9254 23.5955 21.0604 23.5955C21.3154 23.5955 21.5104 23.5055 21.6754 23.3405L22.8154 22.2155C23.1904 21.8405 23.5504 21.5555 23.8954 21.3755C24.2404 21.1655 24.5854 21.0605 24.9604 21.0605C25.2454 21.0605 25.5454 21.1205 25.8754 21.2555C26.2054 21.3905 26.5504 21.5855 26.9254 21.8405L31.8904 25.3655C32.2804 25.6355 32.5504 25.9505 32.7154 26.3255C32.8654 26.7005 32.9554 27.0755 32.9554 27.4955Z"
+                      fill="#C1D8FF"></path>
+                  </svg>
                   <div class="text ml-16">
-                    <div class="caption2 text-line">We are open on</div>
-                    <div class="fw-700 text-white mt-4">Mon - Sat 11 AM - 05 PM</div>
+                    <div class="caption2 text-line">Need help? 24/7 </div>
+                    <div class="fw-700 text-white mt-4"><a href="tel:+919150306306" target="_blank"
+                        rel="noopener noreferrer" style="color:white ;">+91- 9150306306</a></div>
                   </div>
-                  <div class="locate mt-12 flex-item-center"> <i class="ph-light ph-map-pin text-line"></i>
-                    <div class="caption1 text-line ml-8">S-5, Second Floor, Top Ten Imperial, Sangamner</div>
-                  </div>
-                  <!-- <div class="send-block mt-20 flex-item-center">
+                </div>
+                <div class="text ml-16">
+                  <div class="caption2 text-line">We are open on</div>
+                  <div class="fw-700 text-white mt-4">Mon - Sat 11 AM - 05 PM</div>
+                </div>
+                <div class="locate mt-12 flex-item-center"> <i class="ph-light ph-map-pin text-line"></i>
+                  <div class="caption1 text-line ml-8">S-5, Second Floor, Top Ten Imperial, Sangamner</div>
+                </div>
+                <!-- <div class="send-block mt-20 flex-item-center">
                     <input class="caption1 text-secondary" type="text" placeholder="Your email address"/>
                     <button class="flex-center"><i class="ph ph-paper-plane-tilt text-white"></i></button>
                   </div> -->
-                </div>
               </div>
             </div>
-            <div class="border-line"></div>
-            <div class="footer-bottom flex-between pt-12 pb-12">
-              <div class="left-block flex-item-center">
-                <div class="copy-right text-line caption1">©2023 Kadlag. All Rights Reserved.</div>
-              </div>
-              <!-- <div class="nav-link flex-item-center gap-10"><a class="text-line caption1 hover-underline" href="#!">Terms Of Services</a><span class="text-line caption1">|</span><a class="text-line caption1 hover-underline" href="#!">Privacy Policy</a><span class="text-line caption1">|</span><a class="text-line caption1 hover-underline" href="#!">Cookie Policy</a></div> -->
+          </div>
+          <div class="border-line"></div>
+          <div class="footer-bottom flex-between pt-12 pb-12">
+            <div class="left-block flex-item-center">
+              <div class="copy-right text-line caption1">©2023 Kadlag. All Rights Reserved.</div>
             </div>
+            <!-- <div class="nav-link flex-item-center gap-10"><a class="text-line caption1 hover-underline" href="#!">Terms Of Services</a><span class="text-line caption1">|</span><a class="text-line caption1 hover-underline" href="#!">Privacy Policy</a><span class="text-line caption1">|</span><a class="text-line caption1 hover-underline" href="#!">Cookie Policy</a></div> -->
           </div>
         </div>
       </div>
     </div>
-    
+  </div>
 
 
-    <!--build:js assets/js/main.min.js-->
-    <script src="assets/js/jquery-3.7.0.js"></script>
-    <script src="assets/js/jquery-migrate-3.4.1.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/countUp.min.js"></script>
-    <script src="assets/js/phosphor-icon.js"></script>
-    <script src="assets/js/scrollreveal-4.0.0.min.js"></script>
-    <script src="assets/js/bootstrap-drawer.min.js"></script>
-    <script src="assets/js/drawer.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
-    <script src="sip.js"></script>
-    <script src="homeloan.js"></script>
-    <script src="carloan.js"></script>
-    <!--endbuild-->
-  </body>
+
+  <!--build:js assets/js/main.min.js-->
+  <script src="assets/js/jquery-3.7.0.js"></script>
+  <script src="assets/js/jquery-migrate-3.4.1.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/countUp.min.js"></script>
+  <script src="assets/js/phosphor-icon.js"></script>
+  <script src="assets/js/scrollreveal-4.0.0.min.js"></script>
+  <script src="assets/js/bootstrap-drawer.min.js"></script>
+  <script src="assets/js/drawer.min.js"></script>
+  <script src="assets/js/main.min.js"></script>
+  <script src="sip.js"></script>
+  <script src="homeloan.js"></script>
+  <script src="carloan.js"></script>
+  <script src="topup.js"></script>
+  <!--endbuild-->
+</body>
 
 </html>

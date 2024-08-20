@@ -1,0 +1,52 @@
+
+
+.custom-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-toggle-buttons {
+    display: flex;
+    margin: 10px 0;
+}
+
+.custom-toggle-buttons button {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dc291a;
+    background-color: #fff;
+    color: #dc291a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-toggle-buttons button.active {
+    background-color: #fec700;
+    color: #fff;
+}
+
+.custom-input-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
