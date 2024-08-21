@@ -4,7 +4,6 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get and sanitize form fields.
     $name = strip_tags(trim($_POST["name"]));
-    $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $dob = trim($_POST["birth-date"]);
     $birth_place = strip_tags(trim($_POST["birth-place"]));
     $occupation = strip_tags(trim($_POST["Occupation"]));
@@ -21,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'bank_cheque' => $_FILES['bank_cheque']
     ];
 
-    // Check that data was sent to the mailer.
+    // Validate form fields
     if (empty($name) || empty($dob) || empty($birth_place) || empty($occupation) || empty($mobile) || empty($email) || empty($nominee_name) || empty($nominee_dob) || empty($nominee_pan) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
         echo "Please complete the form and try again.";
@@ -72,8 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     $recipient = "kadlag.support@gmail.com";
-
-    // Set the email subject.
     $subject = "New inquiry from $name";
 
     // Build the email content.
@@ -86,32 +83,52 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Nominee Name: $nominee_name\n";
     $email_content .= "Nominee Date of Birth: $nominee_dob\n";
     $email_content .= "Nominee PAN Card Number: $nominee_pan\n\n";
-    
-    // Append file paths if needed
+
     foreach ($file_paths as $field => $path) {
         $email_content .= ucfirst(str_replace('_', ' ', $field)) . ": $path\n";
     }
 
     // Build the email headers.
-    $email_headers = "From: $name <$email>";
-    
-    // Send the email.
-    if (mail($recipient, $subject, $email_content, $email_headers)) {
+    $boundary = md5(time());
+    $email_headers = "From: $name <$email>\r\n";
+    $email_headers .= "Reply-To: $email\r\n";
+    $email_headers .= "MIME-Version: 1.0\r\n";
+    $email_headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
+
+    // Build the email body with attachments
+    $email_body = "--$boundary\r\n";
+    $email_body .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $email_body .= "Content-Transfer-Encoding: 7bit\r\n";
+    $email_body .= "\r\n";
+    $email_body .= $email_content . "\r\n";
+
+    foreach ($file_paths as $file_field => $path) {
+        $file_name = basename($path);
+        $file_content = chunk_split(base64_encode(file_get_contents($path)));
+
+        $email_body .= "--$boundary\r\n";
+        $email_body .= "Content-Type: application/octet-stream; name=\"$file_name\"\r\n";
+        $email_body .= "Content-Transfer-Encoding: base64\r\n";
+        $email_body .= "Content-Disposition: attachment; filename=\"$file_name\"\r\n";
+        $email_body .= "\r\n";
+        $email_body .= $file_content . "\r\n";
+    }
+
+    $email_body .= "--$boundary--";
+
+    // Send the email
+    if (mail($recipient, $subject, $email_body, $email_headers)) {
         http_response_code(200);
         echo "Thank You! Your message has been sent.";
-        // header("Location: thank-you.html");
     } else {
         http_response_code(500);
         echo "Oops! Something went wrong and we couldn't send your message.";
-        // header("Location: oops.html");
     }
 
 } else {
     // Not a POST request, set a 403 (forbidden) response code.
     http_response_code(403);
     echo "There was a problem with your submission, please try again.";
-    // header("Location: ".$_SERVER["HTTP_REFERER"]);
-    // exit;
 }
 
 ?>

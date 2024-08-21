@@ -233,7 +233,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-5" style="bottom: 50px;">
-             <form method="post" action="free-demat-mail.php" id="contact-form">
+             <form method="post" action="free-demat-mail.php" id="contact-form" enctype="multipart/form-data">
                <div class="form-block flex-columns-between gap-20">
                 <div class="row row-gap-20">
                   <div class="col-12">
@@ -270,7 +270,9 @@
                     <label for="" class="w-100 bg-surface text-secondary caption1 pl-16 pr-16 pt-12 pb-12 bora-8">Upload Documents - Pan Card , Aadhar card , Bank cancel cheque&nbsp;  <br> &nbsp; &nbsp; or bank passbook </label>
                   </div>
                   <div class="col-12">
-                    <input class="w-100 bg-surface text-secondary caption1 pl-16 pr-16 pt-12 pb-12 bora-8" type="file" name="upload-file" id="upload-file" placeholder="Aadhar Register Mobile No"/>
+                    <input type="file" id="pan_card" name="pan_card" accept=".jpg,.jpeg,.png,.pdf"><br>
+                    <input type="file" id="aadhar_card" name="aadhar_card" accept=".jpg,.jpeg,.png,.pdf"> <br>
+                    <input type="file" id="bank_cheque" name="bank_cheque" accept=".jpg,.jpeg,.png,.pdf">
                   </div>
                 </div>
                 <div class="button-block">
