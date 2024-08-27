@@ -2,9 +2,6 @@
 
 // Only process POST requests.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Initialize an array to collect error messages
-    $errors = [];
-
     // Get and sanitize form fields.
     $name = strip_tags(trim($_POST["name"]));
     $dob = trim($_POST["birth-date"]);
@@ -15,40 +12,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nominee_name = strip_tags(trim($_POST["Nominee-name"]));
     $nominee_dob = trim($_POST["Nominee-birth-date"]);
     $nominee_pan = strip_tags(trim($_POST["Nominee-pan-no"]));
+    
+    // File uploads
+    $files = [
+        'pan_card' => $_FILES['pan_card'],
+        'aadhar_card' => $_FILES['aadhar_card'],
+        'bank_cheque' => $_FILES['bank_cheque']
+    ];
 
     // Validate form fields
-    if (empty($name)) {
-        $errors[] = "Name is required.";
-    }
-    if (empty($dob)) {
-        $errors[] = "Date of Birth is required.";
-    }
-    if (empty($birth_place)) {
-        $errors[] = "Place of Birth is required.";
-    }
-    if (empty($occupation)) {
-        $errors[] = "Occupation is required.";
-    }
-    if (empty($mobile)) {
-        $errors[] = "Aadhar Registered Mobile No is required.";
-    }
-    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = "A valid email address is required.";
-    }
-    if (empty($nominee_name)) {
-        $errors[] = "Nominee Name is required.";
-    }
-    if (empty($nominee_dob)) {
-        $errors[] = "Nominee Date of Birth is required.";
-    }
-    if (empty($nominee_pan)) {
-        $errors[] = "Nominee PAN Card Number is required.";
-    }
-
-    // If there are validation errors, return them
-    if (!empty($errors)) {
+    if (empty($name) || empty($dob) || empty($birth_place) || empty($occupation) || empty($mobile) || empty($email) || empty($nominee_name) || empty($nominee_dob) || empty($nominee_pan) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
-        echo implode("\n", $errors);
+        echo "Please complete the form and try again.";
         exit;
     }
 
@@ -57,24 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $allowed_types = ['jpg', 'jpeg', 'png', 'pdf']; // Allowed file types
     $max_size = 2 * 1024 * 1024; // 2MB max file size
 
-    $files = [
-        'pan_card' => $_FILES['pan_card'],
-        'aadhar_card' => $_FILES['aadhar_card'],
-        'bank_cheque' => $_FILES['bank_cheque']
-    ];
-
     $file_paths = [];
     $file_errors = [];
 
     foreach ($files as $file_field => $file) {
-        if ($file['error'] !== UPLOAD_ERR_OK) {
-            $file_errors[] = "Error uploading " . basename($file['name']) . ".";
-            continue;
-        }
-
         $file_name = basename($file['name']);
         $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
         $file_path = $upload_dir . uniqid() . '.' . $file_ext;
+
+        if ($file['error'] !== UPLOAD_ERR_OK) {
+            $file_errors[] = "Error uploading $file_name.";
+            continue;
+        }
 
         if (!in_array($file_ext, $allowed_types)) {
             $file_errors[] = "$file_name has an invalid file type.";
