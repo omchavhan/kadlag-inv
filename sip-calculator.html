@@ -660,8 +660,8 @@
           <h2>Top Up SIP Calculator</h2>
           <div class="custom-input-container">
             <label for="sip-amount">Enter Amount (₹)</label>
-            <input type="number" id="sip-amount" value="10000" oninput="updateAmountDisplay()">
-            <span class="custom-amount-display" id="amount-display">₹10,000</span>
+            <input type="number" id="sip-amount" value="10000" oninput="updateAmountDisplay()" style="width: 150px;border: 2px solid #EB4D4D;border-radius: 5px;margin-right: 5px;"> 
+            <span class="custom-amount-display" id="amount-display" >₹10,000</span>
           </div>
 
           <label>Frequency</label>
@@ -671,14 +671,14 @@
           </div>
 
           <label>Annual Increment in SIP amount</label>
-          <div class="custom-toggle-buttons">
+          <div class="custom-toggle-buttons" style="margin-bottom: 30px;">
             <button id="percentage" class="active" onclick="setIncrementType('percentage')">Percentage</button>
             <button id="amount" onclick="setIncrementType('amount')">Amount</button>
           </div>
 
           <input type="range" id="increment-percentage" min="0.5" max="15" step="0.1" value="6"
             oninput="updatePercentageLabel(); updateSliderBackground('increment-percentage')">
-          <div class="custom-range-label">
+          <div class="custom-range-label" style="margin-bottom: 10px;">
             <span id="percentage-min">0.5%</span>
             <span id="percentage-max">15%</span>
           </div>
@@ -690,10 +690,10 @@
             <span id="amount-max">₹5000</span>
           </div>
 
-          <label>Expected rate of return (%)</label>
+          <label >Expected rate of return (%) </label>
           <input type="range" id="rate-of-return" min="2" max="13" step="0.1" value="10.5"
-            oninput="updateRateOfReturnLabel(); updateSliderBackground('rate-of-return')">
-          <div class="custom-range-label">
+            oninput="updateRateOfReturnLabel(); updateSliderBackground('rate-of-return')" >
+          <div class="custom-range-label" style="margin-bottom: 10px;">
             <span id="rate-min">2%</span>
             <span id="rate-max">13%</span>
           </div>
@@ -701,12 +701,12 @@
           <label>Period of Investment (Years)</label>
           <input type="range" id="investment-period" min="1" max="30" step="1" value="22"
             oninput="updatePeriodLabel(); updateSliderBackground('investment-period')">
-          <div class="custom-range-label">
+          <div class="custom-range-label" style="margin-bottom: 10px;">
             <span id="period-min">1 Year</span>
             <span id="period-max">30 Years</span>
           </div>
 
-          <button class="custom-submit-btn custome" onclick="calculateSIP()">Submit</button>
+          <button class="custom-submit-btn custome" onclick="calculateSIP()" style="margin-bottom: 10px;">Submit</button>
 
           <div class="custom-result" id="result">
             <div id="total-investment">Total Investment: ₹0.00</div>
@@ -773,7 +773,7 @@
       </div>
     </div>
   </div>
-  <a class="scroll-to-top-btn" href="#header"><i class="ph-bold ph-caret-up"></i></a>
+  <a class="scroll-to-top-btn" style="margin-bottom: 20px;" href="#header"><i class="ph-bold ph-caret-up"></i></a>
   <!-- <div class="pb-200"></div> -->
 
   <!-- Footer start   -->
